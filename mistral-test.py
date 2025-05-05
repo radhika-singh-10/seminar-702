@@ -12,7 +12,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 # === Load your JSON file ===
-with open("data.json", "r") as f:
+with open("all_data.json", "r") as f:
     data = json.load(f)
 
 # === Loop through each row ===
