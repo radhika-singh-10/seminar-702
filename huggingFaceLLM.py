@@ -6,7 +6,7 @@ HF_TOKEN = "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"
 
 # Initialize HF Inference Client
 client = InferenceClient(
-    model="google/gemma-7b-it",
+    model="tiiuae/falcon-7b-instruct",
     token=HF_TOKEN
 )
 
