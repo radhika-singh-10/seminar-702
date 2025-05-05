@@ -3,7 +3,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # === Choose model ===
-model_id = "deepseek-ai/DeepSeek-R1"
+model_id = "deepseek-ai/DeepSeek-V2"
 
 # === Load tokenizer and model ===
 tokenizer = AutoTokenizer.from_pretrained(
