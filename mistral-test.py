@@ -16,7 +16,7 @@ with open("all_data.json", "r") as f:
     data = json.load(f)
 
 # === Loop through each row ===
-for item in data:
+for index,item in enumerate(data):
     row = item["row"]
     
     # Skip already-processed rows
@@ -40,6 +40,9 @@ for item in data:
     # Decode and store the result
     response = tokenizer.decode(output_ids[0], skip_special_tokens=True).strip()
     row["mistral-local-response"] = response
+    
+    if index==100:
+        break
 
 # === Save updated JSON ===
 with open("data_with_mistral.json", "w") as f:
