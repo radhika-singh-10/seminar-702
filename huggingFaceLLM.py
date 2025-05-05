@@ -6,7 +6,7 @@ HF_TOKEN = "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"
 
 # Initialize HF Inference Client
 client = InferenceClient(
-    model="tiiuae/falcon-7b-instruct",
+    model="mistralai/Mistral-7B-Instruct-v0.1",
     token=HF_TOKEN
 )
 
